@@ -1,0 +1,227 @@
+body{
+    background-size: cover;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container {
+    padding: 120px 0 245px 0;
+}
+
+.navbar{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    background: rgba(0,0,0,0.6) !important;
+    padding: 25px 0;
+
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:#fff;
+    padding-left:20px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #2ECC71;
+}
+
+.heading-content{
+    padding: 414px 0 414px 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.heading-content h5{
+    font-size: 3em;
+    font-weight: 300;
+    font-family: monospace;
+}
+
+.heading-content h1{
+    font-size: 5em;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.heading-content p{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+
+}
+
+#about .btn {
+    border: 2px solid transparent;
+    width: 40%;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+#about .btn a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about .btn:hover{
+    border: 2px solid #2ECC71;
+    cursor: pointer;
+
+
+}
+
+.img-fluid {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.card-img-top {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.viewComment{
+    clear:both;
+    overflow:hidden;
+    position:relative;
+    background:rgb(255, 255, 255);
+    border-bottom:5px solid #2ECC71;
+}
+
+.viewComment p {
+    width:100%;
+    padding:10px;
+    font-size:20px;
+    line-height:25px;
+}
+
+.delete{
+    position:absolute;
+    width:20px;
+    height:20px;
+    display:none;
+    cursor:pointer;
+    bottom:5px;
+    padding:2px;
+}
+
+.viewComment:hover .delete{
+    display:block;
+}
+  
+.delete{
+    right:10px;
+    bottom: 10px;
+    background:url(https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/cross-24-16.png) no-repeat center #2ECC71;
+    z-index:2;
+}
+
+.footer{
+    padding:40px 0;
+    background-color:#ffffff;
+    color: rgb(19,34,57);
+}
+
+.footer .social {
+    text-align:center;
+    padding-bottom:25px;
+}
+  
+.footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid rgb(19,34,57);
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+  
+.footer .social > a:hover {
+    opacity:0.9;
+    color: #2ECC71;
+}
+  
+.footer .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+}
+
+.social{
+    padding: 200px 0 0 0;
+}
+
+
+/*------------------- media query -------------------*/
+@media screen and (max-width: 767px) {
+    /*------------------- tablets -------------------*/
+    .navbar{
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+    }
+
+    .heading-content{
+        padding: 414px 0 414px 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .heading-content h5{
+        font-size: 3em;
+    }
+    
+    .heading-content h1{
+        font-size: 3em;
+    }
+    
+    .heading-content p{
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 479px) {
+    /*------------------- smartphones -------------------*/
+    .navbar{
+        letter-spacing: 0.1rem;
+        padding: 7px 0;
+    }
+
+    .heading-content{
+        padding: 414px 0 414px 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .heading-content h5{
+        font-size: 2em;
+    }
+    
+    .heading-content h1{
+        font-size: 2em;
+    }
+    
+    .heading-content p{
+        font-size: 0.7em;
+    }
+}
